@@ -1,0 +1,303 @@
+[
+  {
+    "policy_name": "Risk Assessment Policy",
+    "sections": {
+      "purpose": "The purpose of this policy is to establish a comprehensive and systematic approach for identifying, analyzing, evaluating, and treating information security risks that could impact organizational assets, operations, and regulatory compliance. It ensures that risk management activities are aligned with business objectives and conducted consistently across the organization.",
+      "scope": "This policy applies to all information assets, IT systems, applications, networks, cloud environments, and third-party services that process, store, or transmit organizational data.",
+      "definitions": "Risk refers to the potential for loss or damage when a threat exploits a vulnerability. A threat is any potential cause of an unwanted incident, and a vulnerability is a weakness that can be exploited by a threat actor.",
+      "roles_and_responsibilities": "The Chief Information Security Officer (CISO) is responsible for defining the risk management framework and ensuring compliance. The Risk Management Team conducts periodic risk assessments and maintains the risk register. Asset owners are responsible for identifying risks related to their assets and implementing mitigation controls.",
+      "inputs": "Inputs include asset inventory, threat intelligence feeds, vulnerability assessment results, penetration testing reports, business impact analysis, and applicable regulatory requirements.",
+      "risk_treatment": "Risk treatment options include risk avoidance by eliminating risky activities, risk mitigation through implementation of security controls, risk transfer via insurance or outsourcing, and risk acceptance based on defined risk appetite and approval.",
+      "outputs": "Outputs include a documented risk register, risk treatment plans, risk assessment reports, and dashboards that provide visibility into risk posture.",
+      "tools": "Tools used include vulnerability scanning tools, risk assessment frameworks, GRC platforms, and threat intelligence systems.",
+      "review_frequency": "Risk assessments are conducted at least annually and whenever there are significant changes to systems, processes, or threat landscape.",
+      "compliance_mapping": "This policy aligns with ISO 27001 Clause 6.1.2 and related risk management requirements.",
+      "records": "Records maintained include risk registers, risk assessment reports, risk treatment plans, and approval documentation for risk acceptance."
+    }
+  },
+  {
+    "policy_name": "Access Control Policy",
+    "sections": {
+      "purpose": "The purpose of this policy is to ensure that access to organizational systems, applications, and data is granted only to authorized individuals based on business needs and security principles, thereby preventing unauthorized access and data breaches.",
+      "scope": "This policy applies to all employees, contractors, vendors, and third-party users who access organizational systems either on-premise or remotely.",
+      "definitions": "Authentication is the process of verifying a user's identity, while authorization determines what resources a user is allowed to access.",
+      "roles_and_responsibilities": "IT administrators are responsible for provisioning and deprovisioning access. Managers approve access requests based on business need. Users are responsible for maintaining confidentiality of credentials.",
+      "principles": "Access control is based on least privilege, need-to-know, and role-based access control (RBAC) principles.",
+      "authentication": "All users must authenticate using strong passwords and multi-factor authentication mechanisms, especially for privileged accounts.",
+      "authorization": "Access rights are assigned based on job roles and responsibilities and are periodically reviewed to ensure continued appropriateness.",
+      "monitoring": "Access logs are continuously monitored and reviewed to detect unauthorized or suspicious access attempts.",
+      "review_frequency": "Access reviews are conducted quarterly and whenever there are changes in user roles.",
+      "compliance_mapping": "Aligned with ISO 27001 Annex A.9.",
+      "records": "Maintained records include access logs, user access approval forms, and periodic review reports."
+    }
+  },
+  {
+    "policy_name": "Incident Management Policy",
+    "sections": {
+      "purpose": "To ensure that information security incidents are promptly identified, reported, assessed, and resolved in order to minimize business impact and prevent recurrence.",
+      "scope": "Applies to all employees, systems, networks, applications, and data within the organization.",
+      "definitions": "An information security incident is any event that compromises the confidentiality, integrity, or availability of information assets.",
+      "roles_and_responsibilities": "The Security Operations Center (SOC) monitors and detects incidents. The Incident Response Team investigates and resolves incidents. The CISO oversees incident management processes.",
+      "inputs": "Inputs include SIEM alerts, user-reported incidents, threat intelligence feeds, and system logs.",
+      "process": "The incident response lifecycle includes identification, classification, containment, eradication, recovery, and post-incident review.",
+      "outputs": "Outputs include incident reports, root cause analysis, corrective actions, and lessons learned documentation.",
+      "tools": "SIEM tools, EDR solutions, forensic tools, and incident tracking systems are used.",
+      "review_frequency": "The process is reviewed after major incidents and annually.",
+      "compliance_mapping": "Aligned with ISO 27001 Annex A.16.",
+      "records": "Incident logs, investigation reports, and evidence are maintained for audit purposes."
+    }
+  },
+
+  {
+    "policy_name": "Data Classification Policy",
+    "sections": {
+      "purpose": "To ensure that data is classified based on sensitivity and criticality so that appropriate security controls can be applied to protect it.",
+      "scope": "Applies to all data created, processed, stored, or transmitted by the organization.",
+      "definitions": "Data classification categories include Confidential, Internal, and Public, based on the sensitivity and impact of disclosure.",
+      "roles_and_responsibilities": "Data owners are responsible for classifying data, while IT and security teams enforce appropriate protection controls.",
+      "inputs": "Data inventory, regulatory requirements, and business impact assessments.",
+      "classification_levels": "Data is categorized into Confidential, Internal, and Public classifications.",
+      "handling_requirements": "Confidential data must be encrypted and access restricted. Internal data is limited to employees. Public data has no restrictions.",
+      "outputs": "Classified data inventory and labeling.",
+      "tools": "Data discovery and DLP tools.",
+      "review_frequency": "Annually or upon data changes.",
+      "compliance_mapping": "ISO 27001 Annex A.8.",
+      "records": "Classification registers and reports."
+    }
+  },
+
+  {
+    "policy_name": "Vendor Risk Management Policy",
+    "sections": {
+      "purpose": "To identify, assess, and manage risks associated with third-party vendors to ensure that they meet organizational security requirements.",
+      "scope": "Applies to all vendors, suppliers, and service providers.",
+      "definitions": "A vendor is any third-party entity providing services or products to the organization.",
+      "roles_and_responsibilities": "Procurement initiates vendor onboarding, while the security team evaluates vendor risk.",
+      "inputs": "Vendor questionnaires, contracts, risk ratings, and audit reports.",
+      "process": "Vendor onboarding, due diligence, risk assessment, continuous monitoring, and offboarding.",
+      "outputs": "Vendor risk register and assessment reports.",
+      "tools": "Third-party risk management tools.",
+      "review_frequency": "Annually or upon significant vendor changes.",
+      "compliance_mapping": "ISO 27001 Annex A.15.",
+      "records": "Vendor assessments and contracts."
+    }
+  },
+
+  {
+    "policy_name": "Password Management Policy",
+    "sections": {
+      "purpose": "To enforce strong password practices to prevent unauthorized access to systems and data.",
+      "scope": "Applies to all users and systems.",
+      "definitions": "A password is a secret authentication credential used to verify identity.",
+      "roles_and_responsibilities": "Users must maintain password secrecy, and IT enforces password policies.",
+      "password_requirements": "Passwords must be at least 12 characters long and include complexity requirements.",
+      "authentication_controls": "Multi-factor authentication is required for critical systems.",
+      "inputs": "User accounts and authentication logs.",
+      "outputs": "Secure authentication mechanisms and logs.",
+      "tools": "Password managers and IAM systems.",
+      "review_frequency": "Annually.",
+      "compliance_mapping": "ISO 27001 Annex A.9.",
+      "records": "Access logs and password policy records."
+    }
+  },
+
+  {
+    "policy_name": "Backup and Recovery Policy",
+    "sections": {
+      "purpose": "To ensure data availability and business continuity by implementing regular backup and recovery processes.",
+      "scope": "Applies to all critical systems and data.",
+      "definitions": "Backup refers to a copy of data used for recovery in case of data loss.",
+      "roles_and_responsibilities": "IT performs backups, and system owners validate restoration.",
+      "backup_strategy": "Full backups weekly and incremental backups daily.",
+      "recovery_objectives": "RTO is 4 hours and RPO is 1 hour.",
+      "inputs": "System data and backup configurations.",
+      "outputs": "Backup logs and recovery reports.",
+      "tools": "Backup software and storage systems.",
+      "review_frequency": "Quarterly testing.",
+      "compliance_mapping": "ISO 27001 Annex A.12.",
+      "records": "Backup logs and recovery test reports."
+    }
+  },
+  {
+    "policy_name": "Secure Development Policy",
+    "sections": {
+      "purpose": "The purpose of this policy is to ensure that security is embedded throughout the software development lifecycle (SDLC) so that applications are designed, developed, tested, and deployed in a secure manner, reducing vulnerabilities and protecting sensitive data.",
+      "scope": "This policy applies to all internally developed applications, third-party software integrations, and development teams involved in software creation and maintenance.",
+      "definitions": "Secure SDLC refers to the integration of security practices such as threat modeling, secure coding, and testing into each phase of software development.",
+      "roles_and_responsibilities": "Developers are responsible for following secure coding practices, security teams perform code reviews and security testing, and project managers ensure compliance with secure development requirements.",
+      "inputs": "Inputs include source code, architecture diagrams, design documents, and security requirements.",
+      "process": "The secure development process includes requirements analysis, threat modeling, secure design, secure coding, code review, SAST, DAST, and vulnerability remediation.",
+      "outputs": "Outputs include secure application releases, vulnerability assessment reports, and remediation documentation.",
+      "tools": "Tools include static application security testing (SAST), dynamic application security testing (DAST), and software composition analysis (SCA) tools.",
+      "review_frequency": "Security reviews are conducted during each release cycle and after major changes.",
+      "compliance_mapping": "Aligned with ISO 27001 Annex A.14.",
+      "records": "Code review reports, vulnerability reports, and release documentation are maintained."
+    }
+  },
+  {
+    "policy_name": "Logging and Monitoring Policy",
+    "sections": {
+      "purpose": "The purpose of this policy is to ensure that system and security events are logged, monitored, and analyzed to detect suspicious activities, support incident response, and ensure compliance with security requirements.",
+      "scope": "This policy applies to all systems, applications, network devices, and security tools within the organization.",
+      "definitions": "Logs are records of events generated by systems and applications, and monitoring refers to the continuous analysis of these logs.",
+      "roles_and_responsibilities": "The SOC team monitors logs and responds to alerts, while IT teams ensure proper log generation and retention.",
+      "inputs": "Inputs include system logs, application logs, network logs, and security alerts.",
+      "logging_requirements": "All critical systems must generate logs for authentication, authorization, configuration changes, and security events.",
+      "monitoring": "Logs are monitored continuously using SIEM tools to detect anomalies and potential security incidents.",
+      "outputs": "Outputs include alerts, incident tickets, and monitoring reports.",
+      "tools": "SIEM platforms, log management tools, and monitoring dashboards.",
+      "review_frequency": "Logs are monitored daily and reviewed monthly.",
+      "compliance_mapping": "Aligned with ISO 27001 Annex A.12.4.",
+      "records": "Log archives, monitoring reports, and alert records are maintained."
+    }
+  },
+  {
+    "policy_name": "Business Continuity Policy",
+    "sections": {
+      "purpose": "To ensure that critical business operations can continue during and after disruptive events, minimizing downtime and financial impact.",
+      "scope": "Applies to all business units, processes, and supporting IT systems.",
+      "definitions": "Business Continuity Plan (BCP) is a documented approach to ensure operations continue during disruptions.",
+      "roles_and_responsibilities": "BCP team coordinates continuity planning, department heads ensure readiness, and management approves strategies.",
+      "inputs": "Business impact analysis, risk assessments, and recovery requirements.",
+      "process": "Identify critical processes, define recovery strategies, implement controls, and conduct testing.",
+      "outputs": "Business continuity plans, recovery procedures, and test reports.",
+      "tools": "BCP tools, disaster recovery solutions.",
+      "review_frequency": "Annually and after major disruptions.",
+      "compliance_mapping": "ISO 27001 Annex A.17.",
+      "records": "BCP documentation and test results."
+    }
+  },
+  {
+    "policy_name": "Network Security Policy",
+    "sections": {
+      "purpose": "To protect network infrastructure from unauthorized access, misuse, and cyber threats by implementing appropriate controls.",
+      "scope": "Applies to all internal and external networks, including cloud environments.",
+      "definitions": "Firewall is a device that filters network traffic based on rules, and IDS/IPS detects and prevents intrusions.",
+      "roles_and_responsibilities": "Network administrators manage configurations, and SOC monitors network activity.",
+      "inputs": "Network traffic logs, firewall rules, and threat intelligence.",
+      "controls": "Implementation of firewalls, IDS/IPS, network segmentation, and secure configurations.",
+      "monitoring": "Continuous monitoring of network traffic to detect anomalies.",
+      "outputs": "Security alerts and network monitoring reports.",
+      "tools": "Firewalls, IDS/IPS, network monitoring tools.",
+      "review_frequency": "Quarterly and after significant changes.",
+      "compliance_mapping": "ISO 27001 Annex A.13.",
+      "records": "Firewall logs and network audit reports."
+    }
+  },
+  {
+    "policy_name": "Endpoint Security Policy",
+    "sections": {
+      "purpose": "To protect endpoint devices such as laptops, desktops, and mobile devices from cyber threats and unauthorized access.",
+      "scope": "Applies to all endpoint devices connected to the organizational network.",
+      "definitions": "Endpoint refers to any device that connects to the network.",
+      "roles_and_responsibilities": "IT manages endpoint protection tools, and users follow security guidelines.",
+      "inputs": "Device inventory, security alerts, and configuration baselines.",
+      "controls": "Use of antivirus, endpoint detection and response (EDR), disk encryption, and patch management.",
+      "monitoring": "Continuous monitoring of endpoint activities.",
+      "outputs": "Threat alerts and remediation reports.",
+      "tools": "EDR tools, antivirus solutions, patch management systems.",
+      "review_frequency": "Quarterly.",
+      "compliance_mapping": "ISO 27001 Annex A.12.",
+      "records": "Endpoint logs and incident reports."
+    }
+  },
+  {
+    "policy_name": "Change Management Policy",
+    "sections": {
+      "purpose": "To ensure that all changes to systems and infrastructure are properly assessed, approved, implemented, and documented to minimize risk.",
+      "scope": "Applies to all IT systems, applications, and infrastructure changes.",
+      "definitions": "A change is any modification to systems or configurations.",
+      "roles_and_responsibilities": "Change Advisory Board (CAB) reviews and approves changes, and IT teams implement them.",
+      "inputs": "Change requests, risk assessments, and impact analysis.",
+      "process": "Submission, approval, implementation, testing, and review of changes.",
+      "outputs": "Approved change records and audit logs.",
+      "tools": "Change management systems and ticketing tools.",
+      "review_frequency": "Per change cycle.",
+      "compliance_mapping": "ISO 27001 Annex A.12.1.2.",
+      "records": "Change logs and approval records."
+    }
+  },
+  {
+    "policy_name": "Asset Management Policy",
+    "sections": {
+      "purpose": "To ensure that all organizational assets are identified, classified, and managed securely throughout their lifecycle.",
+      "scope": "Applies to all physical and digital assets.",
+      "definitions": "Asset refers to any item of value to the organization.",
+      "roles_and_responsibilities": "Asset owners are responsible for asset classification and protection, and IT maintains inventory.",
+      "inputs": "Asset inventory and ownership records.",
+      "classification": "Assets are classified based on sensitivity and criticality.",
+      "outputs": "Asset register and classification records.",
+      "tools": "Asset management systems.",
+      "review_frequency": "Annually.",
+      "compliance_mapping": "ISO 27001 Annex A.8.",
+      "records": "Asset inventory and ownership records."
+    }
+  },
+  {
+    "policy_name": "Encryption Policy",
+    "sections": {
+      "purpose": "To ensure that sensitive data is protected using strong encryption mechanisms both at rest and in transit.",
+      "scope": "Applies to all sensitive data handled by the organization.",
+      "definitions": "Encryption is the process of converting data into a secure format to prevent unauthorized access.",
+      "roles_and_responsibilities": "Security team defines encryption standards, and IT implements them.",
+      "inputs": "Sensitive data and encryption keys.",
+      "controls": "Use of AES-256 encryption for data at rest and TLS for data in transit.",
+      "key_management": "Secure key generation, storage, rotation, and destruction processes are implemented.",
+      "outputs": "Encrypted data and audit logs.",
+      "tools": "Encryption tools and key management systems.",
+      "review_frequency": "Annually.",
+      "compliance_mapping": "ISO 27001 Annex A.10.",
+      "records": "Key management logs and encryption audit records."
+    }
+  },
+  {
+    "policy_name": "Mobile Device Policy",
+    "sections": {
+      "purpose": "To ensure that mobile devices accessing organizational data are secured to prevent data leakage and unauthorized access.",
+      "scope": "Applies to all corporate and BYOD mobile devices.",
+      "definitions": "Mobile Device Management (MDM) refers to tools used to manage and secure mobile devices.",
+      "roles_and_responsibilities": "IT manages MDM solutions, and users comply with security requirements.",
+      "inputs": "Device inventory and user access details.",
+      "controls": "Device encryption, screen lock, remote wipe, and MDM enforcement.",
+      "outputs": "Secured mobile devices and compliance reports.",
+      "tools": "MDM solutions.",
+      "review_frequency": "Annually.",
+      "compliance_mapping": "ISO 27001 Annex A.6.",
+      "records": "Device logs and compliance reports."
+    }
+  },
+  {
+    "policy_name": "Physical Security Policy",
+    "sections": {
+      "purpose": "To protect physical facilities, equipment, and personnel from unauthorized access, damage, or interference.",
+      "scope": "Applies to all offices, data centers, and physical locations.",
+      "definitions": "Physical security refers to measures that protect physical assets.",
+      "roles_and_responsibilities": "Security team manages access controls, and employees follow physical security procedures.",
+      "inputs": "Access logs and visitor records.",
+      "controls": "Access badges, CCTV surveillance, security guards, and visitor management systems.",
+      "monitoring": "24/7 surveillance of facilities.",
+      "outputs": "Access logs and incident reports.",
+      "tools": "Access control systems and CCTV.",
+      "review_frequency": "Annually.",
+      "compliance_mapping": "ISO 27001 Annex A.11.",
+      "records": "Visitor logs and access records."
+    }
+  },
+  {
+    "policy_name": "Email Security Policy",
+    "sections": {
+      "purpose": "To protect email systems and users from threats such as phishing, malware, and data leakage.",
+      "scope": "Applies to all corporate email systems and users.",
+      "definitions": "Phishing is a fraudulent attempt to obtain sensitive information through email.",
+      "roles_and_responsibilities": "IT manages email security systems, and users report suspicious emails.",
+      "inputs": "Email logs and threat intelligence.",
+      "controls": "Spam filtering, anti-phishing controls, and implementation of SPF, DKIM, and DMARC.",
+      "monitoring": "Continuous monitoring of email traffic.",
+      "outputs": "Blocked threats and security alerts.",
+      "tools": "Secure email gateways.",
+      "review_frequency": "Quarterly.",
+      "compliance_mapping": "ISO 27001 Annex A.13.",
+      "records": "Email logs and incident reports."
+    }
+  }
+]
