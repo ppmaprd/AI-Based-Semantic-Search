@@ -100,10 +100,8 @@ http://127.0.0.1:5000
 ## 📊 Output Format
 
 ```
-[Policy]: Risk Assessment Policy  
-[Section]: Scope  
-[Answer]: Applies to all employees and systems...  
-[Source]: Based on policy content  
+<img width="1305" height="550" alt="image" src="https://github.com/user-attachments/assets/5b1b0cee-d564-43fd-9075-dfc45f07b344" />
+
 ```
 
 ---
